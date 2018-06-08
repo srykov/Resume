@@ -11,6 +11,7 @@ html {
 }
 
 body{
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -27,6 +28,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .avatar{
@@ -69,25 +71,55 @@ header {
     text-align: left;
 }
 
+nav {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #808080;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  justify-content: center;
+}
+
+nav i{
+  font-weight: 400;
+  padding: 5px;
+}
+
+.navigation-tab{
+  color: #7e7f80;
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 40px;
+}
+
+.active{
+  color: #3fb1ec;
+}
+
 main{
-  background: #d5d8db;
   flex: 1;
   margin: 15px;
-  border: 1px #7e7f80 solid;
   display: flex;
   width: auto;
   flex-direction: column;
 }
 
 section {
-  font-family: 'Roboto', sans-serif;
-  margin: 0 10px 10px 10px;
-  padding: 20px 20px 0 20px;
+  margin: 10px;
+  padding: 20px;
   justify-content: center;
   background: #fff;
   width: auto;
-  border-top: 2px solid #3fb1ec;
-  border-bottom: 2px solid #3fb1ec;
+  border: 1px solid #7e7f80;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.15);
 }
 
 .section-title{
@@ -96,13 +128,6 @@ section {
     font-size: 40px;
     color: #3fb1ec;
     padding: 5px 0 10px 0;
-}
-
-.section-control{
-    font-weight: 600;
-    font-size: 40px;
-    color: #7e7f80;
-    padding: 0 40px 0 10px;
 }
 
 .section-highlight{
@@ -117,6 +142,7 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   color: #7e7f80;
+  padding: 20px 0 20px;
 }
 
 .contact-method {
@@ -141,7 +167,7 @@ section {
 }
 
 .highlight-icon{
-  padding: 0 50px 0 0;
+  padding: 0 40px 0 0;
 }
 
 section p, section ul {
